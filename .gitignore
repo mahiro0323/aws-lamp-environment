@@ -1,0 +1,21 @@
+# Secrets and credentials
+.env
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# AWS and SSH local files
+.aws/
+.ssh/
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+
