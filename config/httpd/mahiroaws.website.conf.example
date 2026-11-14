@@ -1,0 +1,17 @@
+<VirtualHost *:80>
+    ServerName mahiroaws.website
+    ServerAlias www.mahiroaws.website
+    DocumentRoot /var/www/mahiroaws.website
+
+    <Directory /var/www/mahiroaws.website>
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    ErrorLog /var/log/httpd/mahiroaws.website-error.log
+    CustomLog /var/log/httpd/mahiroaws.website-access.log combined
+</VirtualHost>
+
+# HTTPSの証明書・秘密鍵のパスは環境に合わせて設定します。
+# 秘密鍵そのものはGitHubへ登録しません。
+
