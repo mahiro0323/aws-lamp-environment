@@ -14,15 +14,11 @@ AWS EC2 上の AlmaLinux 9 に LAMP 環境を構築し、独自ドメインと H
 
 ## 構成
 
-```mermaid
-flowchart TD
-    U["Webブラウザ"] -->|"HTTPS / 443"| R["Amazon Route 53"]
-    R --> E["Elastic IP"]
-    E --> EC2["Amazon EC2 / AlmaLinux 9"]
-    EC2 --> A["Apache HTTP Server"]
-    A --> P["PHP"]
-    P --> M["MySQL"]
-```
+![AWS EC2 LAMP環境の構成図](docs/aws-lamp-architecture.png)
+
+利用者からRoute 53による名前解決、Internet Gateway、Elastic IP、Security Groupを経由して、Public Subnet内のEC2へ到達する通信経路を表しています。EC2上ではAlmaLinux 9、Apache、PHP、MySQLを稼働させています。
+
+構成図には[AWS公式のArchitecture Icons](https://aws.amazon.com/architecture/icons/)を使用しています。
 
 ## 使用技術
 
