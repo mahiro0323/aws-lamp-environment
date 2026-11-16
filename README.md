@@ -88,3 +88,7 @@ Apacheが起動しない事象に対し、次の順番で切り分けました�
 
 このリポジトリは学習内容を再構成したものです。AWSの認証情報、秘密鍵、パスワード、実IPアドレスなどの機密情報は掲載していません。
 
+
+## 関連資格
+
+- [AWS Certified Solutions Architect – Associate（Credly認証）](https://www.credly.com/badges/0962fe98-8a1d-456c-90c8-f58558412089/public_url)
